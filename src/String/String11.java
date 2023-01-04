@@ -13,10 +13,10 @@ public class String11 {
             }
             else if(str.charAt(i) != str.charAt(i+1)){
                 answer += str.charAt(i);
-            if(p>1){
-                answer += String.valueOf(p);
-                }
-                p=1;
+                if(p>1){
+                    answer += String.valueOf(p);
+                    }
+                    p=1;
             }
         }
         return answer;
