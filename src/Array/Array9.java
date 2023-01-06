@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 //행,열,대각선 합 -> 최대값
 public class Array9 {
-
     public static int solution(int n, int[][] arr){
         int answer = 0;
         int sum1, sum2; //행,열의 합

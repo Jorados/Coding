@@ -8,10 +8,16 @@ public class Array6 {
         ArrayList<Integer> answer = new ArrayList<>();
         int[] array = new int[n];
 
+//        for(int i=0; i<arr.length; i++) {
+//                String tmp = new StringBuilder(arr[i]).reverse().toString();
+//                array[i] += Integer.valueOf(tmp);
+//        }
+
         for(int i=0; i<arr.length; i++) {
-                String tmp = new StringBuilder(arr[i]).reverse().toString();
-                array[i] += Integer.valueOf(tmp);
+            String tmp = new StringBuffer(arr[i]).reverse().toString();
+            array[i] += Integer.valueOf(tmp);
         }
+
 
         for(int i=0; i<array.length; i++){
             if(isPrime(array[i])) answer.add(array[i]);

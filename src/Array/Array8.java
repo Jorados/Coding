@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 //등수 구하기
 //더 높은 등수 나오면 p++
+
 public class Array8 {
     public static int[] solution(int n, int[] arr){
         int[] answer = new int[n];
