@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+//두 배열 공통 원소 구하기 (오름차순) [ 투 포인터 ]
 public class TS2 {
     public static ArrayList<Integer> solution(int n, int n2, int[] arr, int[] arr2){
         ArrayList<Integer> answer = new ArrayList<>();

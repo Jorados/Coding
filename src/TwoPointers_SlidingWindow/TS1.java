@@ -1,25 +1,22 @@
 package TwoPointers_SlidingWindow;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class TS1 {
-    public static int[] solution(int n, int n2, int[] arr, int arr2[]){
-        int[] answer = new int[arr.length + arr2.length];
-        int index = 0;
-        for(int x : arr){
-            answer[index ++] = x;
+    public static ArrayList<Integer> solution(int n, int m, int[] a, int[] b){
+        ArrayList<Integer> answer = new ArrayList<>();
+        int p1=0, p2=0;
+        while(p1<n && p2<m){
+            if(a[p1]<b[p2]) answer.add(a[p1++]);
+            else answer.add(b[p2++]);
         }
-        for(int x : arr2){
-            answer[index ++] = x;
-        }
-        Arrays.sort(answer);
+        while(p1<n) answer.add(a[p1++]);
+        while(p2<m) answer.add(b[p2++]);
         return answer;
     }
 
-    //ex) 동적 배열을 정렬하는 법
-    //List<Integer> numbers = Arrays.asList(5, 3, 1, 2, 4);
-    //Collections.sort(numbers);
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

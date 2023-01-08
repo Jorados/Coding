@@ -8,7 +8,6 @@ import java.util.Scanner;
 //4 3 6 4 1
 //8 7 3 5 2
 public class Array10 {
-
     public static int solution(int n, int[][] arr){
         int answer = 0;
 
