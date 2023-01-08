@@ -12,7 +12,7 @@ public class TS5 {
         for(int i=0; i<n; i++) arr[i]=i+1;
 
         //인덱스 0번 값은 1부터 시작이기 때문에 n-1까지만 돌아야
-        //자기 자신 값을 제외할수있다.
+        //자기 자신 값을 제외할 수 있다.
         for(rt=0; rt<n-1; rt++){
             sum+=arr[rt];
             if(sum == n) answer++;
