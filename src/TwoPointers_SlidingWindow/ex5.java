@@ -2,7 +2,7 @@ package TwoPointers_SlidingWindow;
 
 import java.util.Scanner;
 
-public class TS5 {
+public class ex5 {
     public static int solution(int n){
         int answer =0;
         int lt=0,rt=0;

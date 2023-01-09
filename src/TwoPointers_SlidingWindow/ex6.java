@@ -1,22 +1,22 @@
 package TwoPointers_SlidingWindow;
 
-import java.util.Arrays;
 import java.util.Scanner;
-//최대 매출 [ 슬라이딩 윈도우 ]
-public class TS3 {
+
+//연속된 1의 합
+public class ex6 {
     public static int solution(int n, int k, int[] arr){
         int answer =0;
-        int sum=0;
-        for(int i=0; i<k; i++) sum+=arr[i];
-        answer = sum;
-        //핵심 로직
-        for(int i=k; i<n; i++){
-            sum+=(arr[i] - arr[i-k]);
-            answer=Math.max(answer,sum);
+        int cnt=0,rt=0,lt=0;
+        for(rt=0; rt<arr.length; rt++){
+            if(arr[rt] == 0) cnt++;
+            while(cnt>k){
+                if(arr[lt]==0) cnt--;
+                lt++;
+            }
+            answer = Math.max(answer, rt-lt+1);
         }
-
         return answer;
-}
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

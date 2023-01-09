@@ -1,32 +1,21 @@
 package TwoPointers_SlidingWindow;
 
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
-//두 배열 공통 원소 구하기 (오름차순) [ 투 포인터 ]
-public class TS2 {
-    public static ArrayList<Integer> solution(int n, int n2, int[] arr, int[] arr2){
+public class ex1 {
+    public static ArrayList<Integer> solution(int n, int m, int[] a, int[] b){
         ArrayList<Integer> answer = new ArrayList<>();
-        int p1=0,p2=0;
-
-        Arrays.sort(arr);
-        Arrays.sort(arr2);
-
-        while(p1<n && p2<n2){
-            if(arr[p1] == arr2[p2]){
-                answer.add(arr[p1]);
-                p1++;
-                p2++;
-            }
-            else if(arr[p1] < arr2[p2]) p1++;
-            else if(arr[p1] > arr2[p2]) p2++;
+        int p1=0, p2=0;
+        while(p1<n && p2<m){
+            if(a[p1]<b[p2]) answer.add(a[p1++]);
+            else answer.add(b[p2++]);
         }
-
+        while(p1<n) answer.add(a[p1++]);
+        while(p2<m) answer.add(b[p2++]);
         return answer;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

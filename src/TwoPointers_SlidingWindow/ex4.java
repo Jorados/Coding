@@ -3,7 +3,7 @@ package TwoPointers_SlidingWindow;
 import java.util.Scanner;
 
 //연속 부분 수열 [ 복합 문제 ]
-public class TS4 {
+public class ex4 {
     public static int solution(int n, int m, int[] arr){
         int answer =0;
         int sum=0,lt=0;
