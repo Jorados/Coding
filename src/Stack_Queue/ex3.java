@@ -3,6 +3,7 @@ package Stack_Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
+//Stack
 public class ex3 {
     public static int solution(int n, int[][] arr,int k, int[] moves){
         int answer = 0;

@@ -3,6 +3,7 @@ package Stack_Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
+//Stack
 public class ex2 {
     public static String solution(String s){
         String answer = "";

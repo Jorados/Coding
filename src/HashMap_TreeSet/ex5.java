@@ -33,5 +33,4 @@ public class ex5 {
 
         System.out.print(solution(n,k,arr));
     }
-
 }
