@@ -14,7 +14,6 @@ public class ex7 {
         for(char x : s1.toCharArray()){
             Q.offer(x);
         }
-
         for(char x : s2.toCharArray()){
             if(Q.contains(x)){
                 if(x!=Q.poll()) return "NO";
@@ -23,7 +22,6 @@ public class ex7 {
         if(!Q.isEmpty()) return "NO";
         return answer;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s1 = sc.next();
