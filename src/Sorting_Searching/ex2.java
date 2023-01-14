@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ex2 {
     public static int[] solution(int n,int[] arr){
         int[] answer = new int[n];
-        for(int i=0; i <arr.length ; i++) {
+        for(int i=0; i <arr.length; i++) { //턴 횟수
             for(int j=0; j <arr.length-1-i; j++) {
                 if(arr[j]>arr[j+1]) {
                     int temp = arr[j];
