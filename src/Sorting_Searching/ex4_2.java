@@ -9,14 +9,14 @@ public class ex4_2 {
         int[] array = new int[n];
         for(int x: arr){
             //미스
-            int pos=-1;
+            int pos=0;
             //히트
             for(int i=0; i<n; i++) {
                 if(x==array[i]) pos=i; //히트면 pos인덱스가 바뀜
             }
 
             //미스
-            if(pos==-1){
+            if(pos==0){
                 for(int i=n-1; i>=1; i--){
                     array[i] = array[i-1];
                 }
