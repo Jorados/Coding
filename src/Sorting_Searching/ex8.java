@@ -8,7 +8,7 @@ public class ex8 {
     public static int solution(int n,int k, int[] arr){
         int answer =0;
         Arrays.sort(arr);
-        int lt=0,rt=0;
+        int lt=0,rt=arr.length-1;
         while(lt<=rt){
             int mid=(lt+rt)/2;
             if(arr[mid] == k){
