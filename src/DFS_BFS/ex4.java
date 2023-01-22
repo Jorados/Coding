@@ -2,6 +2,7 @@ package DFS_BFS;
 
 import java.util.Scanner;
 
+//중복 순열 구하기
 public class ex4 {
     static int n,m;
     static int[] answer;

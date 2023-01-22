@@ -32,15 +32,12 @@ public class ex14 {
         }
         ch=new int[n+1];
         dis=new int[n+1];
-
         for(int i=0; i<m; i++){
             int a=sc.nextInt();
             int b=sc.nextInt();
             graph.get(a).add(b);
         }
-
         BFS(1);
-
         for(int i=2; i<=n; i++){
             System.out.println(i+" : "+dis[i]);
         }
