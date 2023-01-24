@@ -12,6 +12,7 @@ public class ex6 {
     public static void DFS(int L,int[] num){
         if(L==m) {
             for(int x : answer) System.out.print(x + " ");
+            System.out.println();
         }
         else{
             for(int i=0; i<n; i++){
