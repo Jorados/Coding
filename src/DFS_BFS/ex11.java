@@ -29,7 +29,7 @@ public class ex11 {
                 if(nx>=1 && nx<=7 && ny>=1 && ny<=7 && board[nx][ny]==0){
                     board[nx][ny]=1;
                     Q.offer(new Point(nx,ny));
-                    dis[nx][ny] = dis[tmp.x][tmp.y] + 1; //거리 1씩 늘림
+                    dis[nx][ny] = dis[tmp.x][tmp.y] + 1; //dis->거리 측정배열
                 }
             }
         }
