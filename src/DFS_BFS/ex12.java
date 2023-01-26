@@ -16,7 +16,7 @@ public class ex12 {
             for(int i=0; i<4; i++){
                 int nx = tmp.x+dx[i];
                 int ny = tmp.y+dy[i];
-                if(nx>=1 && nx<=7 && ny>=1 && ny<=7 && board[nx][ny]==0){
+                if(nx>=0 && nx<n && ny>=0 && ny<m && board[nx][ny]==0){
                     board[nx][ny]=1;
                     Q.offer(new Point(nx,ny));
                     dis[nx][ny] = dis[tmp.x][tmp.y] + 1;
@@ -32,7 +32,7 @@ public class ex12 {
         board = new int[n][m];
         dis = new int[n][m];
         for(int i=0; i<n; i++){
-            for(int j=0; j<=m; j++){
+            for(int j=0; j<m; j++){
                 board[i][j]=sc.nextInt();
                 if(board[i][j]==1) Q.offer(new Point(i,j));
             }

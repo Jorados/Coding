@@ -8,10 +8,8 @@ import java.util.Scanner;
 //DFS
 public class ex13 {
     static int answer=0,n=0;
-
     static int[] dx={-1, -1, 0, 1, 1, 1, 0, -1};
     static int[] dy={0, 1, 1, 1, 0, -1, -1, -1};
-
     public static void DFS(int x,int y,int[][] board){
         for(int i=0; i<8; i++){ //8방향
             int nx= x+dx[i];
