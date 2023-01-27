@@ -5,10 +5,8 @@ import java.util.Collections;
 import java.util.Scanner;
 
 class Time implements Comparable<Time>{
-
     public int startT;
     public int lastT;
-
     public Time(int startT, int lastT) {
         this.startT = startT;
         this.lastT = lastT;
