@@ -14,7 +14,6 @@ class Lecture implements Comparable<Lecture>{
         this.money = money;
         this.day = day;
     }
-
     @Override
     public int compareTo(Lecture o) {
         return o.day - this.day;
